@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todoApp {
+    margin-top: 120px !important;
+}
+
+.todoApp .content {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.todoApp .content ul li {
+    list-style: none;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background-color: #f2f2f2;
+    margin: 8px 0px;
+    right: 10%;
+    border-radius: 5px;
+    padding: 0px 15px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.todoApp .content ul li:hover span {
+    left: 84%;
+}
+
+.todoApp li span {
+    position: absolute;
+    left: 116%;
+    color: #fff;
+    background-color: #e74c3c;
+    width: 45px;
+    text-align: center;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.todoApp .footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 26px;
+    justify-content: space-between;
+}
+
+.todoApp #addBtn {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.todoApp #addBtn.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.todoApp .footer .clear-all {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.todoApp .clear-all.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.ME {
+    position: fixed;
+    bottom: 0px;
+}
